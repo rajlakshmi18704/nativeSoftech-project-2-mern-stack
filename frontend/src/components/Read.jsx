@@ -4,7 +4,7 @@ const Read = () => {
   const [data, setData] = useState();
   const [error, setError] = useState();
   async function handleDelete(id) {
-    const response = await fetch(`http://localhost:5000/api/v1/users/${id}`, {
+    const response = await fetch(`https://nativesoftech-project-2-mern-stack.onrender.com/api/v1/users/${id}`, {
       method: "DELETE",
     });
     const result1 = await response.json();
@@ -21,7 +21,7 @@ const Read = () => {
     }
   }
   async function getData() {
-    const response = await fetch("http://localhost:5000/api/v1/users");
+    const response = await fetch("https://nativesoftech-project-2-mern-stack.onrender.com/api/v1/users");
     const result = await response.json();
     console.log("result..", result);
     if (!response.ok) {

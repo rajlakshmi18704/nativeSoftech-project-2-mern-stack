@@ -14,7 +14,7 @@ console.log(name,email,age)
     var addUser = { name, email, age };
     console.log(addUser);
 
-    const response = await fetch("http://localhost:5000/api/v1/users", {
+    const response = await fetch("https://nativesoftech-project-2-mern-stack.onrender.com/api/v1/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
